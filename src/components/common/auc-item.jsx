@@ -8,9 +8,9 @@ const AuctionItem = ({ item }) => {
       <div className="auction__item auction__item-2 auction__item-bg  mb-30">
         <div className="auction__thumb m-img mb-15">
           <Link href={`/product-details/${item.id}`}>
-            <a>
+            
               <img className='w-100' src={item.auc_img} alt="" />
-            </a>
+            
           </Link>
         </div>
         <div className="auction__content">
