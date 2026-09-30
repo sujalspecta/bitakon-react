@@ -23,7 +23,7 @@
     "react-use": "^17.6.1",
     "sass": "^1.105.1",
     "swiper": "^14.3.0",
-    "yup": "^0.32.11"
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "eslint": "^10.11.0",
