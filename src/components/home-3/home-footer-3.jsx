@@ -63,15 +63,15 @@ const HomeFooterThree = () => {
                           <div key={item.id} className="nft__sm-item d-flex align-items-center">
                             <div className="nft__sm-thumb mr-15">
                               <Link href={'/product-details'}>
-                                <a>
+                                
                                   <img src={item.user} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                             <div className="nft__sm-content">
                               <h3 className="nft__sm-title">
                                 <Link href={'/product-details'}>
-                                  <a>{item.name}</a>
+                                {item.name}
                                 </Link>
                               </h3>
                               <div className="nft__sm-revenue d-flex align-items-center">

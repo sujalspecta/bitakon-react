@@ -22,23 +22,23 @@ const CreateSingleArea = ({ multiple }) => {
                       <ul>
                         <li>
                           <Link href={'/profile'}>
-                            <a>
+                          
                               <img src="/assets/img/bid/2/bid-user-1.jpg" alt="" />
-                            </a>
+                            
                           </Link>
                         </li>
                         <li>
                           <Link href={'/profile'}>
-                            <a>
+                            
                               <img src="/assets/img/bid/2/bid-user-2.jpg" alt="" />
-                            </a>
+                            
                           </Link>
                         </li>
                         <li>
                           <Link href={'/profile'}>
-                            <a>
+                            
                               <img src="/assets/img/bid/2/bid-user-3.jpg" alt="" />
-                            </a>
+                            
                           </Link>
                         </li>
                       </ul>
@@ -61,13 +61,13 @@ const CreateSingleArea = ({ multiple }) => {
                   </div>
                   <div className="nft__box-thumb w-img mb-20">
                     <Link href="/product-details">
-                      <a>
+                      
                         <img src="/assets/img/bid/2/bid-img-1.jpg" alt="" />
-                      </a>
+                      
                     </Link>
                     <div className="nft__box-popularity">
                       <Link href="/product-details">
-                        <a><i className="fa-solid fa-heart"></i> 24</a>
+                        <i className="fa-solid fa-heart"></i> 24
                       </Link>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ const CreateSingleArea = ({ multiple }) => {
                     <div className="nft__box-content-top d-flex align-items-center justify-content-between">
                       <h3 className="nft__box-title">
                         <Link href="/product-details">
-                          <a>Amazing digital art</a>
+                          Amazing digital art
                         </Link>
                       </h3>
                       <div className="nft__box-trending-icon">

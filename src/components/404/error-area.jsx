@@ -14,8 +14,8 @@ const ErrorArea = () => {
                 <div className="error__content">
                   <h3 className="error__title">Page Not Found</h3>
                   <p>Oops! The page you are looking for does not exist. It might have been moved or deleted.</p>
-                  <Link href="/">
-                    <a className="tp-btn-3">Return Home</a>
+                  <Link href="/" className="tp-btn-3" >
+                   Return Home
                   </Link>
                 </div>
               </div>

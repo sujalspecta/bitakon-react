@@ -34,7 +34,7 @@ const LoginArea = () => {
                 <div className="login__top text-center">
                   <h3>Login</h3>
                   <p>{"Don't have an account yet?"} <Link href={'/register'}>
-                    <a >Register</a>
+                    Register
                   </Link></p>
                 </div>
                 <div className="login__form">
@@ -56,7 +56,7 @@ const LoginArea = () => {
                         <h4>Password <span>*</span></h4>
                         <div className="forgot-password">
                           <Link href="/forget">
-                            <a>Forgot Password?</a>
+                            Forgot Password?
                           </Link>
                         </div>
                       </div>
@@ -78,7 +78,7 @@ const LoginArea = () => {
                     </div>
                     <div className="login__signup text-center">
                       <p>Or <Link href={'/register'}>
-                        <a>Sing Up</a>
+                        Sing Up
                       </Link> with email</p>
                     </div>
                     <div className="login__option-wrapper">

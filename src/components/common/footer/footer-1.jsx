@@ -80,7 +80,7 @@ const FooterOne = ({bg_color}) => {
 
                           <ul>
                             {item.lists.map(list => (
-                              <li key={list.id}><Link href={`${list.url}`}><a>{list.text}</a></Link></li>
+                              <li key={list.id}><Link href={`${list.url}`}>{list.text}</Link></li>
                             ))}
                           </ul>
 

@@ -134,7 +134,7 @@ const SellerArea = () => {
                       <div className="seller__info">
                         <h3 className="seller__name">
                           <Link href={'/profile'}>
-                            <a>{item.name}</a>
+                            {item.name}
                           </Link>
                         </h3>
                         <div className="seller__revenue d-flex align-items-center justify-content-center">

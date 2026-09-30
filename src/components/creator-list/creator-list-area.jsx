@@ -13,15 +13,15 @@ const CreatorListArea = () => {
                         <div className="collection__list d-flex align-items-center mb-20 transition-3">
                            <div className="collection__list-thumb collection__list-rank mr-20">
                               <Link href={'/profile'}>
-                                 <a>
+                                 
                                     <img src={item.img} alt="" />
-                                 </a>
+                                 
                               </Link>
                            </div>
                            <div className="collection__list-content">
                               <h3 className="collection__list-title">
                                  <Link href={'/profile'}>
-                                    <a>{item.title}</a>
+                                    {item.title}
                                  </Link>
                               </h3>
                               <div className="collection__list-revenue d-flex align-items-center">
@@ -41,8 +41,8 @@ const CreatorListArea = () => {
 
                   <div className="col-xxl-12">
                      <div className="nft__more text-center mt-20">
-                        <Link href={'/shop'}>
-                           <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all Creators</a>
+                        <Link href={'/shop'} className="tp-load-more">
+                           <i className="fa-light fa-arrow-rotate-right"></i>View all Creators
                         </Link>
                      </div>
                   </div>

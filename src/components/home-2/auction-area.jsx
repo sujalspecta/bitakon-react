@@ -73,8 +73,8 @@ const AuctionArea = () => {
               </div>
               <div className="col-xxl-6 col-md-6">
                 <div className="auction__more text-md-end">
-                  <Link href={'/auction'}>
-                    <a className="tp-btn-border">View all Artwork</a>
+                  <Link href={'/auction'} className="tp-btn-border">
+                    View all Artwork
                   </Link>
                 </div>
               </div>
@@ -89,30 +89,30 @@ const AuctionArea = () => {
                     <div className="auction__item auction__item-bg mb-30">
                       <div className="auction__thumb m-img mb-15">
                         <Link href={`/product-details/${item.id}`}>
-                          <a >
+                          
                             <img className="w-100" src="assets/img/auction/auction-img-1.jpg" alt="" />
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="auction__content">
                         <h3 className="auction__title">
                           <Link href={`/product-details/${item.id}`}>
-                            <a>Colorful Abstract Painting</a>
+                            Colorful Abstract Painting
                           </Link>
                         </h3>
 
                         <div className="auction__author mb-15 d-flex align-items-center">
                           <div className="auction__author-thumb mr-10">
                             <Link href={`/product-details/${item.id}`}>
-                              <a>
+                              
                                 <img src={item.user1} alt="" />
-                              </a>
+                              
                             </Link>
                           </div>
                           <div className="auction__author-content">
                             <h4><span>by</span>
                               <Link href={`/product-details/${item.id}`}>
-                                <a>{item.author}</a>
+                                {item.author}
                               </Link>
                             </h4>
                           </div>
@@ -147,8 +147,8 @@ const AuctionArea = () => {
                           </div>
                         </div>
                         <div className="auction__btn d-sm-flex align-items-center justify-content-between">
-                          <Link href={`/product-details/${item.id}`}>
-                            <a className="tp-btn-gradient">View artwork</a>
+                          <Link href={`/product-details/${item.id}`} className="tp-btn-gradient">
+                            View artwork
                           </Link>
                           <button type="button" className="tp-btn-gradient active" data-bs-toggle="modal" data-bs-target="#bidmodal">Place Your Bid</button>
                         </div>
@@ -168,23 +168,23 @@ const AuctionArea = () => {
                     <div key={item.id} className="auction__sm-item d-sm-flex align-items-center mb-30">
                       <div className="auction__sm-thumb mr-20">
                         <Link href={`/product-details`}>
-                          <a>
+                          
                             <img src={item.img} alt="" />
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="auction__sm-content">
                         <h3 className="auction__sm-title">
                           <Link href={`/product-details`}>
-                            <a>{item.title}</a>
+                            {item.title}
                           </Link>
                         </h3>
                         <div className="auction__sm-author d-flex align-items-center mb-20">
                           <div className="auction__sm-author-thumb mr-10">
                             <Link href={`/product-details`}>
-                              <a>
+                              
                                 <img src={item.authorImg} alt="" />
-                              </a>
+                              
                             </Link>
                           </div>
                           <div className="auction__sm-price mr-10">
@@ -210,23 +210,23 @@ const AuctionArea = () => {
                     <div key={item.id} className="auction__sm-item d-sm-flex align-items-center mb-30">
                       <div className="auction__sm-thumb mr-20">
                         <Link href={`/product-details`}>
-                          <a>
+                          
                             <img src={item.img} alt="" />
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="auction__sm-content">
                         <h3 className="auction__sm-title">
                           <Link href={`/product-details`}>
-                            <a >{item.title}</a>
+                            {item.title}
                           </Link>
                         </h3>
                         <div className="auction__sm-author d-flex align-items-center mb-20">
                           <div className="auction__sm-author-thumb mr-10">
                             <Link href={`/product-details`}>
-                              <a>
+                              
                                 <img src={item.authorImg} alt="" />
-                              </a>
+                              
                             </Link>
                           </div>
                           <div className="auction__sm-price mr-10">

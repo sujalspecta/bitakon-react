@@ -122,7 +122,7 @@ const HeroSlider = () => {
                             <div className="slider__content">
                               <h3 className="slider__title">
                                 <Link href={'/shop'}>
-                                  <a>Get loud for boys</a>
+                                  Get loud for boys
                                 </Link>
                               </h3>
                               <span>PFP by Elizarevfx</span>
@@ -142,7 +142,7 @@ const HeroSlider = () => {
                                     <div className="slider__content-sm">
                                       <h3 className="slider__title-sm">
                                         <Link href={'/shop'}>
-                                          <a>{item.smImgTitle}</a>
+                                          {item.smImgTitle}
                                         </Link>
                                       </h3>
                                       <span>{item.smImgSubtitle}</span>

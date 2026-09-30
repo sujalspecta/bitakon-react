@@ -13,7 +13,7 @@ const Breadcrumb = ({title,subtitle,b_border}) => {
               <div className="breadcrumb__content text-center">
                 <h3 className="breadcrumb__title">{title}</h3>
                 <div className="breadcrumb__list">
-                  <span><Link href="/"><a>Home</a></Link></span>
+                  <span><Link href="/">Home</Link></span>
                   <span className="dvdr tp-dot"><i className="fa-solid fa-period"></i></span>
                   <span>{subtitle}</span>
                 </div>

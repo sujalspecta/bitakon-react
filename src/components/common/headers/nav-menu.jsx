@@ -15,11 +15,11 @@ const NavMenu = () => {
                 {
                   item?.dropdownItems?.map((menuItem, menuItemIndex) => (
                     <li key={menuItemIndex} className={menuItem.class ? menuItem.class : ''}>
-                      <Link href={`${menuItem.link}`}><a>{menuItem.title}</a></Link>
+                      <Link href={`${menuItem.link}`}>{menuItem.title}</Link>
                       {menuItem.hasDropdownChild && <ul className="submenu">
                         {menuItem.hasDropdownChild.map((childMenu,childMenuIndex) => (
                           <li key={childMenuIndex}>
-                            <Link href={`${childMenu.link}`}><a>{childMenu.title}</a></Link>
+                            <Link href={`${childMenu.link}`}>{childMenu.title}</Link>
                           </li>
                         ))}
                       </ul>}

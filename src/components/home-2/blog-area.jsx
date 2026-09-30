@@ -16,8 +16,8 @@ const BlogArea = () => {
               </div>
               <div className="col-xxl-6 col-lg-6">
                 <div className="blog__more text-lg-end">
-                  <Link href={'/blog'}>
-                    <a className="tp-btn-border">View all Blog</a>
+                  <Link href={'/blog'} className="tp-btn-border">
+                    View all Blog
                   </Link>
                 </div>
               </div>
@@ -38,19 +38,19 @@ const BlogArea = () => {
                           </div>
                           <h3 className="blog__title">
                             <Link href={`/blog-details/${id}`}>
-                              <a>{title}</a>
+                            {title}
                             </Link>
                           </h3>
-                          <Link href={`/blog-details/${id}`}>
-                            <a className="link-btn">Read More <i className="fa-regular fa-arrow-right-long"></i></a>
+                          <Link href={`/blog-details/${id}`} className="link-btn">
+                            Read More <i className="fa-regular fa-arrow-right-long"></i>
                           </Link>
                         </div>
                         <div className="blog__author d-flex align-items-center">
                           <div className="blog__author-thumb mr-10">
                             <Link href={`/blog-details/${id}`}>
-                              <a>
+                              
                                 <img src={author_img} alt="" />
-                              </a>
+                              
                             </Link>
                           </div>
                           <div className="blog__author-content">

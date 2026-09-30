@@ -72,15 +72,15 @@ const ListAreaTwo = () => {
                   <div className="creator__item-inner d-flex align-items-center">
                     <div className="creator__thumb creator__active mr-20">
                       <Link href={'/profile'}>
-                        <a>
+                        
                           <img src={item.img} alt="" />
-                        </a>
+                        
                       </Link>
                     </div>
                     <div className="creator__content">
                       <h3 className="creator__title">
                         <Link href={'/profile'}>
-                          <a>{item.name}</a>
+                          {item.name}
                         </Link>
                       </h3>
                       <div className="creator__revenue  d-flex align-items-center">
@@ -114,8 +114,8 @@ const ListAreaTwo = () => {
 
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href={'/shop'}>
-                  <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all Creators</a>
+                <Link href={'/shop'} className="tp-load-more">
+                  <i className="fa-light fa-arrow-rotate-right"></i>View all Creators
                 </Link>
               </div>
             </div>

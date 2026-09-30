@@ -152,9 +152,9 @@ const ShopArea = ({ collection, creator }) => {
                                         {item.bid_user_2.map((user, index) => (
                                           <li key={index}>
                                             <Link href="/profile">
-                                              <a>
+                                              
                                                 <img src={user.user} alt="" />
-                                              </a>
+                                              
                                             </Link>
                                           </li>
                                         ))}
@@ -178,15 +178,15 @@ const ShopArea = ({ collection, creator }) => {
                                   </div>
                                   <div className="nft__box-thumb m-img mb-20">
                                     <Link href={`/product-details-tab/${item.id}`}>
-                                      <a>
+                                      
                                         <img src={item.smImg2} alt="" />
-                                      </a>
+                                      
                                     </Link>
                                     <div className="nft__box-popularity">
                                       <Link href={`/product-details-tab/${item.id}`}>
-                                        <a>
+                                        
                                           <i className="fa-solid fa-heart"></i> {parseInt(item.wishlist)}
-                                        </a>
+                                        
                                       </Link>
                                     </div>
                                   </div>
@@ -194,7 +194,7 @@ const ShopArea = ({ collection, creator }) => {
                                     <div className="nft__box-content-top d-flex align-items-center justify-content-between">
                                       <h3 className="nft__box-title">
                                         <Link href={`/product-details-tab/${item.id}`}>
-                                          <a>{item.title}</a>
+                                          {item.title}
                                         </Link>
                                       </h3>
                                       <div className="nft__box-trending-icon">
@@ -226,8 +226,8 @@ const ShopArea = ({ collection, creator }) => {
 
                         <div className="col-xxl-12">
                           <div className="nft__more text-center mt-20">
-                            <Link href="/shop">
-                              <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                            <Link href="/shop" className="tp-load-more">
+                              <i className="fa-light fa-arrow-rotate-right"></i>View all items
                             </Link>
                           </div>
                         </div>
@@ -249,36 +249,36 @@ const ShopArea = ({ collection, creator }) => {
                                       <div className="col-xxl-4 col-sm-4 col-4">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href='/collection'>
-                                            <a>
+                                            
                                               <img src={item.smImg_1} alt="" />
-                                            </a>
+                                          
                                           </Link>
                                         </div>
                                       </div>
                                       <div className="col-xxl-4 col-sm-4 col-4">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href='/collection'>
-                                            <a>
+                                            
                                               <img src={item.smImg_2} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
                                       <div className="col-xxl-4 col-sm-4 col-4">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href='/collection'>
-                                            <a>
+                                            
                                               <img src={item.smImg_3} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
                                       <div className="col-xxl-12">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href='/collection'>
-                                            <a>
+                                            
                                               <img src={item.bigImg} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
@@ -287,14 +287,14 @@ const ShopArea = ({ collection, creator }) => {
                                   <div className="collection__content">
                                     <div className="collection__profile">
                                       <Link href='/collection'>
-                                        <a>
+                                        
                                           <img src={item.user} alt="" />
-                                        </a>
+                                        
                                       </Link>
                                     </div>
                                     <h3 className="collection__title">
                                       <Link href='/collection'>
-                                        <a>{item.title}</a>
+                                        {item.title}
                                       </Link>
                                     </h3>
                                     <p>{item.resource} Resources</p>
@@ -307,8 +307,8 @@ const ShopArea = ({ collection, creator }) => {
 
                         <div className="col-xxl-12">
                           <div className="nft__more text-center mt-20">
-                            <Link href='/collection'>
-                              <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                            <Link href='/collection' className="tp-load-more">
+                              <i className="fa-light fa-arrow-rotate-right"></i>View all items
                             </Link>
                           </div>
                         </div>
@@ -324,22 +324,22 @@ const ShopArea = ({ collection, creator }) => {
                             <div className="creator__grid-item mb-30">
                               <div className="creator__grid-bg w-img">
                                 <Link href='/profile'>
-                                  <a>
+                                  
                                     <img src={item.bgImg} alt="" />
-                                  </a>
+                                  
                                 </Link>
                               </div>
                               <div className="creator__grid-content text-center">
                                 <div className="creator__grid-thumb">
                                   <Link href='/profile'>
-                                    <a>
+                                    
                                       <img src={item.creator} alt="" />
-                                    </a>
+                                    
                                   </Link>
                                 </div>
                                 <h3 className="creator__grid-title">
                                   <Link href='/profile'>
-                                    <a>{item.name}</a>
+                                    {item.name}
                                   </Link>
                                 </h3>
                                 <div className="creator__grid-social">
@@ -355,8 +355,8 @@ const ShopArea = ({ collection, creator }) => {
                         ))}
                         <div className="col-xxl-12">
                           <div className="nft__more text-center mt-20">
-                            <Link href='/creator'>
-                             <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                            <Link href='/creator' className="tp-load-more">
+                            <i className="fa-light fa-arrow-rotate-right"></i>View all items
                             </Link>
                           </div>
                         </div>

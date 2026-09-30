@@ -23,32 +23,32 @@ const BlogSidebar = () => {
             <ul>
               <li>
                 <Link href={'/blog'}>
-                  <a>Arts <span className="category-number">(6)</span></a>
+                  Arts <span className="category-number">(6)</span>
                 </Link>
               </li>
               <li>
                 <Link href={'/blog'}>
-                  <a>Domains  <span className="category-number">(2)</span></a>
+                  Domains  <span className="category-number">(2)</span>
                 </Link>
               </li>
               <li>
                 <Link href={'/blog'}>
-                  <a>Technology <span className="category-number">(14)</span></a>
+                  Technology <span className="category-number">(14)</span>
                 </Link>
               </li>
               <li>
                 <Link href={'/blog'}>
-                  <a>Sports <span className="category-number">(8)</span></a>
+                  Sports <span className="category-number">(8)</span>
                 </Link>
               </li>
               <li>
                 <Link href={'/blog'}>
-                  <a>Photography <span className="category-number">(7)</span></a>
+                  Photography <span className="category-number">(7)</span>
                 </Link>
               </li>
               <li>
                 <Link href={'/blog'}>
-                  <a>Bitakon <span className="category-number">(12)</span></a>
+                  Bitakon <span className="category-number">(12)</span>
                 </Link>
               </li>
             </ul>
@@ -91,15 +91,15 @@ const Rc_Post = ({ img, title, date }) => {
     <div className="rc__post d-flex align-items-center">
       <div className="rc__post-thumb mr-20">
         <Link href={'/blog-details'}>
-          <a>
+          
             <img src={`/assets/img/blog/sidebar/blog-sm-${img}.jpg`} alt="" />
-          </a>
+          
         </Link>
       </div>
       <div className="rc__post-content">
         <h3 className="rc__post-title">
           <Link href={'/blog-details'}>
-            <a>{title}</a>
+            {title}
           </Link>
         </h3>
         <div className="rc__meta">

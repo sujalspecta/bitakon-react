@@ -39,8 +39,8 @@ const JoinArea = () => {
                   <h3 className="join__title">Become a  <span>Creator</span></h3>
 
                   <div className="join__btn">
-                    <Link href="/register">
-                     <a className="tp-btn-4">sign up</a>
+                    <Link href="/register" className="tp-btn-4">
+                   sign up
                     </Link>
                   </div>
                 </div>

@@ -90,11 +90,11 @@ const HeroArea = () => {
                             <p>{subtitle}</p>
 
                             <div className="slider__btn-2 d-sm-flex align-items-center">
-                              <Link href={`${btn_1_url}`}>
-                                <a className="tp-btn-gradient active mr-15  mb-15">{btn_1_text}</a>
+                              <Link href={`${btn_1_url}`} className="tp-btn-gradient active mr-15  mb-15">
+                                {btn_1_text}
                               </Link>
-                              <Link href={`${btn_2_url}`}>
-                                <a className="tp-btn-border mb-15">{btn_2_text}</a>
+                              <Link href={`${btn_2_url}`} className="tp-btn-border mb-15">
+                                {btn_2_text}
                               </Link>
                             </div>
                           </div>

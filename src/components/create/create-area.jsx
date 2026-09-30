@@ -25,7 +25,7 @@ const CreateItem = ({title,image}) => {
         <div className="create__content">
           <h4 className="create__title">
             <Link href={'/create-multiple'}>
-              <a>{title}</a>
+              {title}
             </Link>
           </h4>
           <p>Your collectible want to be one of a kind</p>

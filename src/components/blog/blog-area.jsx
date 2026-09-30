@@ -18,20 +18,20 @@ const BlogArea = () => {
                       <div className="blog__grid-item mb-30">
                         <div className="blog__grid-thumb w-img">
                           <Link href={`/blog-details/${item.id}`}>
-                            <a>
+                            
                               <img src={item.bg_img} alt="" />
-                            </a>
+                            
                           </Link>
                         </div>
                         <div className="blog__grid-content">
                           <div className="blog__grid-tag">
                             <Link href={`/blog-details/${item.id}`}>
-                              <a>{item.category}</a>
+                              {item.category}
                             </Link>
                           </div>
                           <h3 className="blog__grid-title">
                             <Link href={`/blog-details/${item.id}`}>
-                              <a>{item.title}</a>
+                              {item.title}
                             </Link>
                           </h3>
                           <div className="blog__grid-author d-flex align-items-center">

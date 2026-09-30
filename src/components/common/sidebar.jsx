@@ -41,9 +41,9 @@ const Sidebar = () => {
               <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo logo">
                   <Link href={'/'}>
-                    <a>
+                    
                       <img src="/assets/img/logo/logo-black.png" alt="logo" />
-                    </a>
+                    
                   </Link>
                 </div>
                 <div className="offcanvas__close" onClick={() => setShowSidebar(false)}>

@@ -58,7 +58,7 @@ const TeamArea = () => {
                   <div className="team__content">
                     <h3 className="team__title">
                       <Link href="/profile">
-                        <a>{item.name}</a>
+                        {item.name}
                       </Link>
                     </h3>
                     <p className="team__position">{item.title}</p>

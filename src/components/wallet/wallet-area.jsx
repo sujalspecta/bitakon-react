@@ -62,7 +62,7 @@ const WalletArea = () => {
                     <div className="wallet__content">
                       <h3 className="wallet__title">
                         <Link href="/profile">
-                          <a >{item.title}</a>
+                          {item.title}
                         </Link>
                       </h3> 
                     </div>

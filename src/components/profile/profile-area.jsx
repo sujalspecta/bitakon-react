@@ -120,9 +120,9 @@ const ProfileArea = () => {
                                       {bid_user_2.map((user, index) => (
                                         <li key={index}>
                                           <Link href={'/profile'}>
-                                            <a>
+                                            
                                               <img src={user.user} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </li>
                                       ))}
@@ -146,16 +146,16 @@ const ProfileArea = () => {
                                 </div>
                                 <div className="nft__box-thumb m-img mb-20">
                                   <Link href={`/product-details-tab/${id}`}>
-                                    <a>
+                                    
                                       <img src={smImg2} alt="" />
-                                    </a>
+                                    
                                   </Link>
                                   <div className="nft__box-popularity">
                                     <Link href={`/product-details-tab/${id}`}>
-                                      <a>
+                                      
                                         <i className="fa-solid fa-heart"></i>
                                         {parseInt(wishlist)}
-                                      </a>
+                                      
                                     </Link>
                                   </div>
                                 </div>
@@ -163,7 +163,7 @@ const ProfileArea = () => {
                                   <div className="nft__box-content-top d-flex align-items-center justify-content-between">
                                     <h3 className="nft__box-title">
                                       <Link href={`/product-details-tab/${id}`}>
-                                        <a>Terrestrial black hole</a>
+                                        Terrestrial black hole
                                       </Link>
                                     </h3>
                                     <div className="nft__box-trending-icon">
@@ -194,11 +194,11 @@ const ProfileArea = () => {
 
                         <div className="col-xxl-12">
                           <div className="nft__more text-center mt-20">
-                            <Link href={'/shop'}>
-                              <a className="tp-load-more">
+                            <Link href={'/shop'} className="tp-load-more">
+                              
                                 <i className="fa-light fa-arrow-rotate-right"></i>
                                 View all items
-                              </a>
+                              
                             </Link>
                           </div>
                         </div>
@@ -219,9 +219,9 @@ const ProfileArea = () => {
                                     {bid_user_2.map((user, index) => (
                                       <li key={index}>
                                         <Link href={'/profile'}>
-                                          <a>
+                                          
                                             <img src={user.user} alt="" />
-                                          </a>
+                                          
                                         </Link>
                                       </li>
                                     ))}
@@ -245,16 +245,16 @@ const ProfileArea = () => {
                               </div>
                               <div className="nft__box-thumb m-img mb-20">
                                 <Link href={`/product-details-tab/${id}`}>
-                                  <a>
+                                  
                                     <img src={smImg2} alt="" />
-                                  </a>
+                                  
                                 </Link>
                                 <div className="nft__box-popularity">
                                   <Link href={`/product-details-tab/${id}`}>
-                                    <a>
+                                    
                                       <i className="fa-solid fa-heart"></i>
                                       {parseInt(wishlist)}
-                                    </a>
+                                    
                                   </Link>
                                 </div>
                               </div>
@@ -262,7 +262,7 @@ const ProfileArea = () => {
                                 <div className="nft__box-content-top d-flex align-items-center justify-content-between">
                                   <h3 className="nft__box-title">
                                     <Link href={`/product-details-tab/${id}`}>
-                                      <a>{title}</a>
+                                      {title}
                                     </Link>
                                   </h3>
                                   <div className="nft__box-trending-icon">
@@ -293,11 +293,9 @@ const ProfileArea = () => {
 
                       <div className="col-xxl-12">
                         <div className="nft__more text-center mt-20">
-                          <Link href={'/shop'}>
-                            <a className="tp-load-more">
+                          <Link href={'/shop'} className="tp-load-more">                          
                               <i className="fa-light fa-arrow-rotate-right"></i>
                               View all items
-                            </a>
                           </Link>
                         </div>
                       </div>
@@ -319,36 +317,36 @@ const ProfileArea = () => {
                                       <div className="col-xxl-4 col-sm-4 col-4">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href={'/collection'}>
-                                            <a>
+                                            
                                               <img src={smImg_1} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
                                       <div className="col-xxl-4 col-sm-4 col-4">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href={'/collection'}>
-                                            <a>
+                                            
                                               <img src={smImg_2} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
                                       <div className="col-xxl-4 col-sm-4 col-4">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href={'/collection'}>
-                                            <a>
+                                            
                                               <img src={smImg_3} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
                                       <div className="col-xxl-12">
                                         <div className="collection__thumb mb-10 m-img">
                                           <Link href={'/collection'}>
-                                            <a>
+                                            
                                               <img src={bigImg} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </div>
                                       </div>
@@ -357,14 +355,14 @@ const ProfileArea = () => {
                                   <div className="collection__content">
                                     <div className="collection__profile">
                                       <Link href={'/profile'}>
-                                        <a>
+                                        
                                           <img src={user} alt="" />
-                                        </a>
+                                        
                                       </Link>
                                     </div>
                                     <h3 className="collection__title">
                                       <Link href={'/collection'}>
-                                        <a>{title}</a>
+                                        {title}
                                       </Link>
                                     </h3>
                                     <p>{resource} Resources</p>
@@ -378,8 +376,8 @@ const ProfileArea = () => {
 
                         <div className="col-xxl-12">
                           <div className="nft__more text-center mt-20">
-                            <Link href={'/collection'}>
-                              <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                            <Link href={'/collection'} className="tp-load-more">
+                              <i className="fa-light fa-arrow-rotate-right"></i>View all items
                             </Link>
                           </div>
                         </div>
@@ -402,9 +400,9 @@ const ProfileArea = () => {
                                       {bid_user_2.map((user, index) => (
                                         <li key={index}>
                                           <Link href={'/profile'}>
-                                            <a>
+                                            
                                               <img src={user.user} alt="" />
-                                            </a>
+                                            
                                           </Link>
                                         </li>
                                       ))}
@@ -428,16 +426,16 @@ const ProfileArea = () => {
                                 </div>
                                 <div className="nft__box-thumb m-img mb-20">
                                   <Link href={`/product-details-tab/${id}`}>
-                                    <a>
+                                    
                                       <img src={smImg2} alt="" />
-                                    </a>
+                                    
                                   </Link>
                                   <div className="nft__box-popularity">
                                     <Link href={`/product-details-tab/${id}`}>
-                                      <a>
+                                      
                                         <i className="fa-solid fa-heart"></i>
                                         {parseInt(wishlist)}
-                                      </a>
+                                      
                                     </Link>
                                   </div>
                                 </div>
@@ -445,7 +443,7 @@ const ProfileArea = () => {
                                   <div className="nft__box-content-top d-flex align-items-center justify-content-between">
                                     <h3 className="nft__box-title">
                                       <Link href={`/product-details-tab/${id}`}>
-                                        <a>{title}</a>
+                                        {title}
                                       </Link>
                                     </h3>
                                     <div className="nft__box-trending-icon">

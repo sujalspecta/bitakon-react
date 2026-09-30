@@ -21,8 +21,8 @@ const CtaArea = () => {
                 <div className="cta__content-2">
                   <h3>Explore and discover Top trending NFTs</h3>
                   <p>Raroin is a shared liquidity NFT market smart contract which is used by multiple websites to provide the users.</p>
-                  <Link href={'/create-single'}>
-                    <a className="tp-btn-gradient active">upload work</a>
+                  <Link href={'/create-single'} className="tp-btn-gradient active">
+                    upload work
                   </Link>
                 </div>
               </div>

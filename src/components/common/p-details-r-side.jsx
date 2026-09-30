@@ -45,15 +45,15 @@ const ProductDetailsRightSide = ({ item }) => {
               <div className="product__details-creator d-flex align-items-center">
                 <div className={`product__details-creator-thumb ${item.verify ? 'verified' : ''} mr-10`}>
                   <Link href={'/profile'}>
-                    <a>
+                    
                       <img src={item.user} alt="" />
-                    </a>
+                    
                   </Link>
                 </div>
                 <div className="product__details-creator-content">
                   <h3>
                     <Link href={'/profile'}>
-                      <a>{item.name}</a>
+                      {item.name}
                     </Link>
                   </h3>
                 </div>
@@ -83,15 +83,15 @@ const ProductDetailsRightSide = ({ item }) => {
                     <div className="product__details-creator d-flex align-items-center">
                       <div className="product__details-creator-thumb verified mr-10">
                         <Link href={'/profile'}>
-                          <a>
+                          
                             <img src="/assets/img/product/user/product-user-2.jpg" alt="" />
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="product__details-creator-content">
                         <h3>
                           <Link href={'/profile'}>
-                            <a>Douglas lyphe</a>
+                            Douglas lyphe
                           </Link>
                         </h3>
                       </div>
@@ -120,7 +120,7 @@ const ProductDetailsRightSide = ({ item }) => {
                   <div className="product__details-category">
                     <h4>Category</h4>
                     <Link href={'/shop'}>
-                      <a>
+                      
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g opacity="0.9">
                             <path d="M1.95027 7.15356H1.17016C0.522672 7.15356 0 7.67624 0 8.32373V9.10383C0 9.75132 0.522672 10.274 1.17016 10.274H1.95027C2.59776 10.274 3.12043 9.75132 3.12043 9.10383V8.32373C3.12043 7.67624 2.58996 7.15356 1.95027 7.15356Z" fill="white" />
@@ -133,7 +133,7 @@ const ProductDetailsRightSide = ({ item }) => {
                           </g>
                         </svg>
                         {item.category}
-                      </a>
+                      
                     </Link>
                   </div>
                 </div>
@@ -145,9 +145,9 @@ const ProductDetailsRightSide = ({ item }) => {
                       <div className="activity__item-inner d-flex align-items-center">
                         <div className="activity__thumb mr-20">
                           <Link href={`/product-details`}>
-                            <a>
+                          
                               <img src={details.img} alt="" />
-                            </a>
+                          
                           </Link>
                           <span className={`activity__tag ${details.tag}`}>
                             {details.icon}
@@ -156,11 +156,11 @@ const ProductDetailsRightSide = ({ item }) => {
                         <div className="activity__content">
                           <h3 className="activity__title">
                             <Link href={`/product-details`}>
-                              <a>{details.title}</a>
+                              {details.title}
                             </Link>
                           </h3>
                           <p>{details.info} <Link href={'/profile'}>
-                            <a>{" "}{details.name}</a>
+                            {details.name}
                           </Link> </p>
                         </div>
                       </div>
@@ -179,9 +179,9 @@ const ProductDetailsRightSide = ({ item }) => {
                       <div className="activity__item-inner d-flex align-items-center">
                         <div className="activity__thumb mr-20">
                           <Link href={`/product-details`}>
-                            <a>
+                            
                               <img src={details.img} alt="" />
-                            </a>
+                            
                           </Link>
                           <span className={`activity__tag ${details.tag}`}>
                             {details.icon}
@@ -190,11 +190,11 @@ const ProductDetailsRightSide = ({ item }) => {
                         <div className="activity__content">
                           <h3 className="activity__title">
                             <Link href={`/product-details`}>
-                              <a>{details.title}</a>
+                              {details.title}
                             </Link>
                           </h3>
                           <p>{details.info} <Link href={'/profile'}>
-                            <a>{" "}{details.name}</a>
+                            {details.name}
                           </Link> </p>
                         </div>
                       </div>
@@ -237,12 +237,12 @@ const ProductDetailsRightSide = ({ item }) => {
                 </div>
               </div>
             </div>
-            <div className="product__details-info-btn">
+            <div className="product__details-info-btn tp-btn-2 active" >
               <Link href={'/shop'}>
-                <a className="tp-btn-2 active">Buy Now</a>
+                Buy Now
               </Link>
-              <Link href={'/shop'}>
-                <a className="tp-btn-2" data-bs-toggle="modal" data-bs-target="#bidmodal">Place Bid</a>
+              <Link href={'/shop'} className="tp-btn-2" data-bs-toggle="modal" data-bs-target="#bidmodal">
+                Place Bid
               </Link>
             </div>
           </div>

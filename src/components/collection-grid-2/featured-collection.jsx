@@ -77,7 +77,7 @@ const FeaturedCollection = () => {
                     <div className="collection__box-top d-flex justify-content-between">
                       <div className="collection__box-tag">
                         <Link href={'/collection'}>
-                          <a>{item.tag}</a>
+                          {item.tag}
                         </Link>
                       </div>
                       <div className="collection__box-thumb">
@@ -88,7 +88,7 @@ const FeaturedCollection = () => {
                       <div className="collection__box-info">
                         <h3 className="collection__box-title">
                           <Link href={'/collection'}>
-                            <a>{item.title}</a>
+                            {item.title}
                           </Link>
                         </h3>
                         <p>{item.nft} NFTs</p>
@@ -103,7 +103,7 @@ const FeaturedCollection = () => {
                           <div className="collection__box-user-content">
                             <h5>
                               <Link href={'/collection'}>
-                                <a>{item.user_name}</a>
+                                {item.user_name}
                               </Link>
                             </h5>
                           </div>
@@ -116,8 +116,8 @@ const FeaturedCollection = () => {
             }
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href={'/collection'}>
-                  <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                <Link href={'/collection'} className="tp-load-more">
+                  <i className="fa-light fa-arrow-rotate-right"></i>View all items
                 </Link>
               </div>
             </div>

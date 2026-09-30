@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   const [open, setIsOpen] = useState(false);
   return <ThemeProvider>
     <AppProvider>
-    <SEO font={'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap'} />
+   <SEO />
     <Theme open={open} setIsOpen={setIsOpen} />
       <Component {...pageProps} />
     </AppProvider>

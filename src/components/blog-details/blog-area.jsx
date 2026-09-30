@@ -17,12 +17,12 @@ const BlogArea = () => {
                 <article className="postbox__item format-image mb-40 transition-3">
                   <div className="blog__grid-tag">
                     <Link href='/blog-details'>
-                      <a>NFTs Marketplace</a>
+                      NFTs Marketplace
                     </Link>
                   </div>
                   <h3 className="postbox__title">
                     <Link href='/blog-details'>
-                      <a>How to Clean Your Home Faster and More Efficiently</a>
+                      How to Clean Your Home Faster and More Efficiently
                     </Link>
                   </h3>
                   <div className="blog__grid-author d-flex align-items-center mb-40">
@@ -38,9 +38,9 @@ const BlogArea = () => {
                   </div>
                   <div className="postbox__thumb m-img mb-30">
                     <Link href='/blog-details'>
-                      <a>
+                      
                         <img src="/assets/img/blog/blog-big-1.jpg" alt="" />
-                      </a>
+                      
                     </Link>
                   </div>
                   <div className="postbox__content">
@@ -88,9 +88,9 @@ const BlogArea = () => {
                     <div className="postbox__author d-md-flex align-items-center mb-40">
                       <div className="postbox__author-thumb mr-20">
                         <Link href='/profile'>
-                          <a>
+                          
                             <img src="assets/img/blog/author/blog-author-7.jpg" alt="" />
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="postbox__author-content">
@@ -104,14 +104,14 @@ const BlogArea = () => {
                           <div className="postbox__more-item d-flex align-items-center mb-35">
                             <div className="postbox__more-icon mr-15">
                               <Link href='/blog-details'>
-                                <a><i className="fa-regular fa-arrow-left"></i></a>
+                                <i className="fa-regular fa-arrow-left"></i>
                               </Link>
                             </div>
                             <div className="postbox__more-content">
                               <span>Previous</span>
                               <h3 className="postbox__more-title">
                                 <Link href='/blog-details'>
-                                  <a>Success Formula How?</a>
+                                  Success Formula How?
                                 </Link>
                               </h3>
                             </div>
@@ -123,13 +123,13 @@ const BlogArea = () => {
                               <span>Next</span>
                               <h3 className="postbox__more-title">
                                 <Link href='/blog-details'>
-                                  <a>Success Formula How?</a>
+                                  Success Formula How?
                                 </Link>
                               </h3>
                             </div>
                             <div className="postbox__more-icon">
                               <Link href='/blog-details'>
-                                <a><i className="fa-regular fa-arrow-right"></i></a>
+                                <i className="fa-regular fa-arrow-right"></i>
                               </Link>
                             </div>
                           </div>

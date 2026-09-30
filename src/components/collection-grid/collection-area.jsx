@@ -21,36 +21,36 @@ const CollectionArea = () => {
                           <div className="col-xxl-4 col-sm-4 col-4">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={smImg_1} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
                           <div className="col-xxl-4 col-sm-4 col-4">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={smImg_2} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
                           <div className="col-xxl-4 col-sm-4 col-4">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={smImg_3} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
                           <div className="col-xxl-12">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={bigImg} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
@@ -59,14 +59,14 @@ const CollectionArea = () => {
                       <div className="collection__content">
                         <div className="collection__profile">
                           <Link href={'/profile'}>
-                            <a>
+                            
                               <img src={user} alt="" />
-                            </a>
+                          
                           </Link>
                         </div>
                         <h3 className="collection__title">
                           <Link href={'/collection'}>
-                            <a>{title}</a>
+                            {title}
                           </Link>
                         </h3>
                         <p>{resource} Resources</p>
@@ -79,9 +79,9 @@ const CollectionArea = () => {
 
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href={'/collection'}>
-                  <a className="tp-load-more">
-                    <i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                <Link href={'/collection'} className="tp-load-more">
+                  
+                    <i className="fa-light fa-arrow-rotate-right"></i>View all items
                 </Link>
               </div>
             </div>

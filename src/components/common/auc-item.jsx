@@ -16,20 +16,20 @@ const AuctionItem = ({ item }) => {
         <div className="auction__content">
           <h3 className="auction__title">
             <Link href={`/product-details/${item.id}`}>
-              <a>{item.title}</a>
+              {item.title}
             </Link>
           </h3>
           <div className="auction__author mb-15 d-flex align-items-center">
             <div className="auction__author-thumb mr-10">
               <Link href={`/profile`}>
-                <a>
+                
                   <img src={item.auc_user} alt="" />
-                </a>
+                
               </Link>
             </div>
             <div className="auction__author-content">
               <h4><span>by</span> <Link href={'/profile'}>
-                <a>{item.title}</a>
+                {item.title}
               </Link></h4>
             </div>
           </div>
@@ -65,8 +65,8 @@ const AuctionItem = ({ item }) => {
             </div>
           </div>
           <div className="auction__btn d-sm-flex align-items-center justify-content-between">
-            <Link href={`/product-details/${item.id}`}>
-              <a className="tp-btn-2">Buy Now</a>
+            <Link href={`/product-details/${item.id}`} className="tp-btn-2" >
+              Buy Now
             </Link>
             <button type="button" className="tp-btn-2 active" data-bs-toggle="modal" data-bs-target="#bidmodal">Place Your Bid</button>
           </div>

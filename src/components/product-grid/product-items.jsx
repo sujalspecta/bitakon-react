@@ -29,9 +29,9 @@ const ProductItems = () => {
                         {item.bid_user_2.map((user, index) => (
                           <li key={index}>
                             <Link href="/profile">
-                              <a>
+                              
                                 <img src={user.user} alt="" />
-                              </a>
+                              
                             </Link>
                           </li>
                         ))}
@@ -55,15 +55,15 @@ const ProductItems = () => {
                   </div>
                   <div className="nft__box-thumb m-img mb-20">
                     <Link href={`/product-details-tab/${item.id}`}>
-                      <a>
+                      
                         <img src={item.smImg2} alt="" />
-                      </a>
+                      
                     </Link>
                     <div className="nft__box-popularity">
                       <Link href={`/product-details-tab/${item.id}`}>
-                        <a>
+                        
                           <i className="fa-solid fa-heart"></i> {parseInt(item.wishlist)}
-                        </a>
+                        
                       </Link>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ const ProductItems = () => {
                     <div className="nft__box-content-top d-flex align-items-center justify-content-between">
                       <h3 className="nft__box-title">
                         <Link href={`/product-details-tab/${item.id}`}>
-                          <a>{item.title}</a>
+                          {item.title}
                         </Link>
                       </h3>
                       <div className="nft__box-trending-icon">
@@ -100,8 +100,8 @@ const ProductItems = () => {
             ))}
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href={'/shop'}>
-                  <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                <Link href={'/shop'} className="tp-load-more">
+                  <i className="fa-light fa-arrow-rotate-right"></i>View all items
                 </Link>
               </div>
             </div>

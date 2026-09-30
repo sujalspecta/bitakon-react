@@ -13,22 +13,22 @@ const CreatorGridArea = () => {
                 <div className="creator__grid-item mb-30">
                   <div className="creator__grid-bg w-img">
                     <Link href="/profile">
-                      <a>
+                      
                         <img src={item.bgImg} alt="" />
-                      </a>
+                      
                     </Link>
                   </div>
                   <div className="creator__grid-content text-center">
                     <div className="creator__grid-thumb">
                       <Link href="/profile">
-                        <a>
+                        
                           <img src={item.creator} alt="" />
-                        </a>
+                        
                       </Link>
                     </div>
                     <h3 className="creator__grid-title">
                       <Link href="/profile">
-                        <a>{item.name}</a>
+                        {item.name}
                       </Link>
                     </h3>
                     <div className="creator__grid-social">
@@ -45,8 +45,8 @@ const CreatorGridArea = () => {
 
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href="/creator">
-                  <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                <Link href="/creator" className="tp-load-more">
+                 <i className="fa-light fa-arrow-rotate-right"></i>View all items
                 </Link>
               </div>
             </div>

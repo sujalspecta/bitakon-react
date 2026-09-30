@@ -75,8 +75,8 @@ const CollectionArea = () => {
                   </nav>
                 </div>
                 <div className="collection__more ml-10">
-                  <Link href={'/shop'}>
-                    <a className="tp-btn-border">view all</a>
+                  <Link href={'/shop'} className="tp-btn-border">
+                    view all
                   </Link>
                 </div>
               </div>
@@ -93,15 +93,15 @@ const CollectionArea = () => {
                         <div className="collection__list d-flex align-items-center mb-20 transition-3">
                           <div className="collection__list-thumb collection__list-rank mr-20">
                             <Link href={'/profile'}>
-                              <a>
+                              
                                 <img src={item.img} alt="" />
-                              </a>
+                              
                             </Link>
                           </div>
                           <div className="collection__list-content">
                             <h3 className="collection__list-title">
                               <Link href={'/profile'}>
-                                <a>{item.title}</a>
+                                {item.title}
                               </Link>
                             </h3>
                             <div className="collection__list-revenue d-flex align-items-center">

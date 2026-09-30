@@ -15,8 +15,8 @@ const CtaArea = () => {
                       <span>What are NFTs?</span>
                       <h3 className="cta__box-title">The future of the digital Economy</h3>
                       <div className="cta__box-btn">
-                        <Link href={'/contact'}>
-                          <a className="tp-btn-square">{`Let's Chat`}</a>
+                        <Link href={'/contact'} className="tp-btn-square">
+                          {`Let's Chat`}
                         </Link>
                       </div>
                     </div>
@@ -49,7 +49,7 @@ const CtaArea = () => {
 const SocialBrand = ({ url, iconName }) => {
   return (
     <Link href={`${url}`}>
-      <a><i className={`fa-brands ${iconName}`}></i></a>
+    <i className={`fa-brands ${iconName}`}></i>
     </Link>
   )
 }

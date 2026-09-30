@@ -20,8 +20,8 @@ const HotCollection = () => {
             </div>
             <div className="col-xxl-6">
               <div className="collection__more text-md-end mb-40">
-                <Link href={'/collection'}>
-                  <a className="tp-btn-border">View All</a>
+                <Link href={'/collection'} className="tp-btn-border">
+                  View All
                 </Link>
               </div>
             </div>
@@ -37,36 +37,36 @@ const HotCollection = () => {
                           <div className="col-xxl-4 col-sm-4 col-4">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={item.smImg_1} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
                           <div className="col-xxl-4 col-sm-4 col-4">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={item.smImg_2} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
                           <div className="col-xxl-4 col-sm-4 col-4">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                                
                                   <img src={item.smImg_3} alt="" />
-                                </a>
+                                
                               </Link>
                             </div>
                           </div>
                           <div className="col-xxl-12">
                             <div className="collection__thumb mb-10 m-img">
                               <Link href={'/collection'}>
-                                <a>
+                              
                                   <img src={item.bigImg} alt="" />
-                                </a>
+                              
                               </Link>
                             </div>
                           </div>
@@ -75,14 +75,14 @@ const HotCollection = () => {
                       <div className="collection__content">
                         <div className="collection__profile">
                           <Link href={'/collection'}>
-                            <a>
+                          
                               <img src={item.user} alt="" />
-                            </a>
+                          
                           </Link>
                         </div>
                         <h3 className="collection__title">
                           <Link href={'/collection'}>
-                            <a>{item.title}</a>
+                          {item.title}
                           </Link>
                         </h3>
                         <p>{item.resource} Resources</p>

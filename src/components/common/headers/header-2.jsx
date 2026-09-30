@@ -18,10 +18,10 @@ const HeaderTwo = () => {
                 <div className="col-xxl-1 col-xl-1 col-lg-2 col-md-6 col-4">
                   <div className="logo header__logo">
                     <Link href={'/'}>
-                      <a>
+                      
                         <img className="logo-white" src="/assets/img/logo/logo.png" alt="logo" />
                         <img className="logo-black" src="/assets/img/logo/logo-black.png" alt="logo" />
-                      </a>
+                      
                     </Link>
                   </div>
                 </div>
@@ -41,34 +41,34 @@ const HeaderTwo = () => {
                     <div className="header__right d-none d-sm-flex justify-content-end align-items-center">
                       <div className="header__notification">
                         <Link href={'/activity'}>
-                          <a>
+                          
                             <svg viewBox="0 0 17 18">
                               <path d="M13.7081 6.08326C13.7081 4.73509 13.1726 3.44215 12.2193 2.48885C11.266 1.53556 9.97305 1 8.62488 1C7.27672 1 5.98377 1.53556 5.03048 2.48885C4.07718 3.44215 3.54163 4.73509 3.54163 6.08326C3.54163 12.0137 1 13.7081 1 13.7081H16.2498C16.2498 13.7081 13.7081 12.0137 13.7081 6.08326Z" stroke="white" strokeOpacity="0.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                               <path d="M10.0905 16.1558C9.94157 16.4126 9.72778 16.6257 9.47056 16.7739C9.21333 16.922 8.9217 17 8.62485 17C8.32801 17 8.03637 16.922 7.77914 16.7739C7.52192 16.6257 7.30813 16.4126 7.15918 16.1558" stroke="white" strokeOpacity="0.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="notification-count">8</span>
-                          </a>
+                          
                         </Link>
                       </div>
                     </div>
                     <div className="header__wallet-wrapper d-none d-sm-flex" id="header__user">
-                      <div className="header__wallet ml-30">
+                      <div className="header__wallet ml-30 header__wallet-btn" id="connectbtn">
                         <Link href={'/wallet'}>
-                          <a className="header__wallet-btn" id="connectbtn">
+                          
                             <svg viewBox="0 0 19 16">
                               <path d="M17.5 5.83333V10.1667C17.5 13.5 15.9 14.5 13.5 14.5H5.5C2.5 14.5 1.5 13 1.5 10.1667V5.83333C1.5 3 2.5 2 4.852 1.552C5.06 1.51733 5.276 1.5 5.5 1.5H13.5C13.708 1.5 13.908 1.50866 14.1 1.54332C16.5 2 17.5 3 17.5 5.83333Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                               <path d="M9 5.03314H5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                               <path d="M17.2998 5.75061H14.8998C14.0198 5.75061 13.2998 6.65061 13.2998 7.75061C13.2998 8.85061 14.0198 9.75061 14.8998 9.75061H17.2998" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             Wallet
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="header__user ml-10">
                         <Link href={'/profile'}>
-                          <a>
+                          
                             <img src="assets/img/user/user.jpg" alt="" />
-                          </a>
+                          
                         </Link>
 
                         <div className="wallet__dropdown tp-wallet-dropdown">
@@ -101,17 +101,17 @@ const HeaderTwo = () => {
                             <ul>
                               <li>
                                 <Link href={'/profile'}>
-                                  <a><i className="fa-regular fa-user"></i> Profile</a>
+                                  <i className="fa-regular fa-user"></i> Profile
                                 </Link>
                               </li>
                               <li>
                                 <Link href={'/edit-profile'}>
-                                  <a><i className="fa-regular fa-gear"></i> Settings</a>
+                                  <i className="fa-regular fa-gear"></i> Settings
                                 </Link>
                               </li>
                               <li>
                                 <Link href={'/login'}>
-                                  <a><i className="fa-regular fa-arrow-right-from-bracket"></i> Logout</a>
+                                  <i className="fa-regular fa-arrow-right-from-bracket"></i> Logout
                                 </Link>
                               </li>
                             </ul>
@@ -121,9 +121,9 @@ const HeaderTwo = () => {
                     </div>
                     <div className="header__user header__user-login ml-30" id="header__user-login">
                       <Link href={'/profile'}>
-                        <a>
+                        
                           <img src="/assets/img/user/user-2.jpg" alt="" />
-                        </a>
+                        
                       </Link>
 
                       <div className="wallet__dropdown">
@@ -156,17 +156,17 @@ const HeaderTwo = () => {
                           <ul>
                             <li>
                               <Link href={'/profile'}>
-                                <a><i className="fa-regular fa-user"></i> Profile</a>
+                                <i className="fa-regular fa-user"></i> Profile
                               </Link>
                             </li>
                             <li>
                               <Link href={'/edit-profile'}>
-                                <a><i className="fa-regular fa-gear"></i> Settings</a>
+                                <i className="fa-regular fa-gear"></i> Settings
                               </Link>
                             </li>
                             <li>
                               <Link href={'/login'}>
-                                <a><i className="fa-regular fa-arrow-right-from-bracket"></i> Logout</a>
+                                <i className="fa-regular fa-arrow-right-from-bracket"></i> Logout
                               </Link>
                             </li>
                           </ul>

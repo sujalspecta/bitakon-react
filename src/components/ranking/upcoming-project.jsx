@@ -86,14 +86,14 @@ const UpcomingProject = () => {
                               <div className="upcoming__single d-flex align-items-center">
                                 <div className="upcoming__thumb mr-10">
                                   <Link href={`/product-details`}>
-                                    <a>
+                                    
                                       <img src={item.product} alt="" />
-                                    </a>
+                                    
                                   </Link>
                                 </div>
                                 <div className="upcoming__content">
                                   <Link href={`/product-details`}>
-                                    <a>{item.title}</a>
+                                    {item.title}
                                   </Link>
                                 </div>
                               </div>

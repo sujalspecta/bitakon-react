@@ -33,7 +33,7 @@ const RegisterArea = () => {
                 </div>
                 <div className="login__top text-center">
                   <h3>Register</h3>
-                  <p>Already have an account? <Link href="/login"><a>Sign in </a></Link></p>
+                  <p>Already have an account? <Link href="/login">Sign in</Link></p>
                 </div>
                 <div className="login__form">
                   <form onSubmit={handleSubmit}>
@@ -68,7 +68,7 @@ const RegisterArea = () => {
                         <h4>Password <span>*</span></h4>
                         <div className="forgot-password">
                           <Link href="/forget"> 
-                           <a>Forgot Password?</a>
+                           Forgot Password?
                           </Link>
                         </div>
                       </div>
@@ -89,7 +89,7 @@ const RegisterArea = () => {
                       <button className="tp-btn-4 w-100">register</button>
                     </div>
                     <div className="login__signup text-center">
-                      <p>Or <Link href="/login"><a>Sing in</a></Link> with email</p>
+                      <p>Or <Link href="/login">Sing in</Link> with email</p>
                     </div>
                     <div className="login__option-wrapper">
                       <div className="login__option-item mb-15">

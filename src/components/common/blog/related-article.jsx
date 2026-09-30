@@ -7,20 +7,20 @@ const RelatedArticle = ({ item }) => {
         <div className="blog__grid-item mb-30">
           <div className="blog__grid-thumb w-img">
             <Link href={`/blog-details/${item.id}`}>
-              <a>
+              
                 <img src={item.bg_img} alt="" />
-              </a>
+              
             </Link>
           </div>
           <div className="blog__grid-content">
             <div className="blog__grid-tag">
               <Link href={`/blog-details/${item.id}`}>
-                <a>{item.tag}</a>
+                {item.tag}
               </Link>
             </div>
             <h3 className="blog__grid-title">
               <Link href={`/blog-details/${item.id}`}>
-                <a>{item.title.slice(0, 40)}...</a>
+                {item.title.slice(0, 40)}...
               </Link>
             </h3>
           </div>

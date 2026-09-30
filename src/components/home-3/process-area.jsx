@@ -78,7 +78,7 @@ const ProcessArea = () => {
                     </div>
                     <div className="process__content">
                       <h3 className="process__title">
-                        <Link href={`${item.url}`}><a>{item.title}</a></Link>
+                        <Link href={`${item.url}`}>{item.title}</Link>
                       </h3>
                       <p>{item.subtitle}</p>
                     </div>

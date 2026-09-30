@@ -74,8 +74,8 @@ const Creators = () => {
               </div>
               <div className="col-xxl-6 col-md-6">
                 <div className="creator__more text-md-end">
-                  <Link href={'/creator'}>
-                    <a className="tp-btn-border square">View Ranking</a>
+                  <Link href={'/creator'} className="tp-btn-border square">
+                    View Ranking
                   </Link>
                 </div>
               </div>
@@ -89,15 +89,15 @@ const Creators = () => {
                     <div className="creator__item-inner d-flex align-items-center">
                       <div className="creator__thumb creator__active mr-20">
                         <Link href={'/profile'}>
-                          <a>
+                          
                             <img src={item.img} alt="" />
-                          </a>
+                          
                         </Link>
                       </div>
                       <div className="creator__content">
                         <h3 className="creator__title">
                           <Link href={'/profile'}>
-                            <a>{item.title}</a>
+                            {item.title}
                           </Link>
                         </h3>
                         <div className="creator__revenue  d-flex align-items-center">

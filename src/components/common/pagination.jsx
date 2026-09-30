@@ -7,14 +7,14 @@ const Pagination = ({ url }) => {
         <ul>
           <li>
             <Link href={`/${url}`}>
-              <a >
+              
                 <i className="fa-light fa-arrow-left"></i>
-              </a>
+              
             </Link>
           </li>
           <li>
             <Link href={`/${url}`}>
-              <a >1</a>
+              1
             </Link>
           </li>
           <li>
@@ -22,14 +22,14 @@ const Pagination = ({ url }) => {
           </li>
           <li>
             <Link href={`/${url}`}>
-              <a >3</a>
+              3
             </Link>
           </li>
           <li>
             <Link href={`/${url}`}>
-              <a >
+              
                 <i className="fa-light fa-arrow-right"></i>
-              </a>
+              
             </Link>
           </li>
         </ul>

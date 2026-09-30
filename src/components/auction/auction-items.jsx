@@ -19,29 +19,29 @@ const AuctionItems = () => {
                   <div className="auction__item auction__item-2 auction__item-bg  mb-30">
                     <div className="auction__thumb m-img mb-15">
                       <Link href={`/product-details/${id}`}>
-                        <a>
+                        
                           <img src={auc_img} alt="" />
-                        </a>
+                        
                       </Link>
                     </div>
                     <div className="auction__content">
                       <h3 className="auction__title">
                         <Link href={`/product-details/${id}`}>
-                          <a>{title}</a>
+                        {title}
                         </Link>
                       </h3>
 
                       <div className="auction__author mb-15 d-flex align-items-center">
                         <div className="auction__author-thumb mr-10">
                           <Link href="/profile">
-                            <a>
+                            
                               <img src={auc_user} alt="" />
-                            </a>
+                            
                           </Link>
                         </div>
                         <div className="auction__author-content">
                           <h4><span>by</span> <Link href="/profile">
-                            <a>{creatorName}</a>
+                            {creatorName}
                           </Link> </h4>
                         </div>
                       </div>
@@ -77,8 +77,8 @@ const AuctionItems = () => {
                         </div>
                       </div>
                       <div className="auction__btn d-sm-flex align-items-center justify-content-between">
-                        <Link href={`/product-details/${id}`}>
-                          <a className="tp-btn-2">Buy Now</a>
+                        <Link href={`/product-details/${id}`} className="tp-btn-2">
+                          Buy Now
                         </Link>
                         <button type="button" className="tp-btn-2 active" data-bs-toggle="modal" data-bs-target="#bidmodal">Place Your Bid</button>
                       </div>
@@ -91,8 +91,8 @@ const AuctionItems = () => {
 
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href="/shop">
-                  <a className="tp-load-more"><i className="fa-light fa-arrow-rotate-right"></i>View all items</a>
+                <Link href="/shop" className="tp-load-more">
+                  <i className="fa-light fa-arrow-rotate-right"></i>View all items
                 </Link>
               </div>
             </div>

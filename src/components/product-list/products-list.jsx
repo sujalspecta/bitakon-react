@@ -28,9 +28,9 @@ const ProductList = () => {
                       <div className="bid__list-left">
                         <div className="bid__thumb m-img mb-15">
                           <Link href={`/product-details/${item.id}`}>
-                            <a>
+                            
                               <img src={item.list_img} alt="" />
-                            </a>
+                            
                           </Link>
                         </div>
                       </div>
@@ -40,26 +40,26 @@ const ProductList = () => {
                             <ul>
                               <li>
                                 <Link href={'/profile'}>
-                                  <a>
+                                  
                                     <img src="assets/img/bid/bid-user-1.jpg" alt="" />
-                                  </a>
+                                  
                                 </Link>
                               </li>
                               <li>
                                 <Link href={'/profile'}>
-                                  <a>
+                                  
                                     <img src="assets/img/bid/bid-user-2.jpg" alt="" />
-                                  </a>
+                                  
                                 </Link>
                               </li>
                             </ul>
                           </div>
                           <div className="bid__popularity">
                             <Link href={'/profile'}>
-                              <a>
+                              
                                 <i className="icon_heart"></i>
                                 {item.wishlist}k
-                              </a>
+                              
                             </Link>
                           </div>
                         </div>
@@ -67,7 +67,7 @@ const ProductList = () => {
                           <div className="bid__content-top d-flex align-items-center justify-content-between">
                             <h3 className="bid__title">
                               <Link href={`/product-details/${item.id}`}>
-                                <a>{item.title}</a>
+                                {item.title}
                               </Link>
                             </h3>
                             <div className="bid__trending-icon mb-15">
@@ -85,8 +85,8 @@ const ProductList = () => {
                         </div>
                         <div className="bid__bottom d-flex align-items-center justify-content-between">
                           <div className="bid__btn-wrapper">
-                            <Link href={`/product-details/${item.id}`}>
-                              <a className="bid__btn bid__btn-border">Bid History</a>
+                            <Link href={`/product-details/${item.id}`} className="bid__btn bid__btn-border">
+                              Bid History
                             </Link>
                           </div>
                           <div className="bid__btn-wrapper">
@@ -104,10 +104,9 @@ const ProductList = () => {
           <div className="row">
             <div className="col-xxl-12">
               <div className="nft__more text-center mt-20">
-                <Link href={'/shop'}>
-                  <a className="tp-load-more">
+                <Link href={'/shop'} className="tp-load-more">
                     <i className="fa-light fa-arrow-rotate-right"></i>
-                    View all items</a>
+                    View all items
                 </Link>
               </div>
             </div>
