@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import Link from 'next/link';
 
 const sliderData = [
@@ -108,7 +109,7 @@ const HeroSlider = () => {
               className="swiper-wrapper"
               spaceBetween={25}
               slidesPerView={1}
-              loop
+             loop={false}
               autoplay={{ delay: 6000 }}
             >
               {sliderData.map(item => {

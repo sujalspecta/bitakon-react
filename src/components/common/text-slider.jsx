@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import { useEffect, useState } from "react";
 
 const slider_text = [
@@ -25,7 +26,7 @@ const TextSlider = () => {
                     <Swiper
                       className="swiper-wrapper"
                       modules={[Autoplay]}
-                      loop={swiperLoop}
+                      loop={false}
                       freeMode={true}
                       autoplay={{delay:1}}
                       centeredSlides={true}

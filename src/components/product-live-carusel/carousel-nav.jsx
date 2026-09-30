@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
-
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
 import products from '../../data/products';
 import BidModal from '../common/modals/bid-modal';
 import AuctionItem from '../common/auc-item';
@@ -41,7 +41,7 @@ const CarouselNav = () => {
                   className="swiper-wrapper"
                   spaceBetween={25}
                   slidesPerView={3}
-                  loop
+                  loop={false}
                   autoplay={{ delay: 6000 }}
                   breakpoints={
                     {

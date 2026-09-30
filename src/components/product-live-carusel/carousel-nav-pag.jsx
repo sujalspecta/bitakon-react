@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, Pagination } from "swiper";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
 import dynamic from 'next/dynamic';
 
 import products from '../../data/products';
@@ -43,7 +44,7 @@ const CarouselPagNav = () => {
                   className="swiper-wrapper"
                   spaceBetween={25}
                   slidesPerView={3}
-                  loop
+                  loop={false}
                   autoplay={{ delay: 6000 }}
                   breakpoints={
                     {

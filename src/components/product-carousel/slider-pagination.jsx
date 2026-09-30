@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
-
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import products from '../../data/products';
 import BidModal from "../common/modals/bid-modal";
 import BidItem from "../common/bid-item";
@@ -32,7 +32,7 @@ const SliderPagination = () => {
                   className="swiper-wrapper"
                   spaceBetween={30}
                   slidesPerView={4}
-                  loop
+                  loop={false}
                   autoplay={{ delay: 6000 }}
                 >
                   {paginationItems.map(item => {

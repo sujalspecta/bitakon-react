@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from 'next/link';
-import { Navigation, EffectFade, Autoplay } from "swiper";
+import { Navigation, EffectFade, Autoplay } from "swiper/modules";
+import "swiper/css";
 import BidModal from "../common/modals/bid-modal";
 import { useEffect, useState } from "react";
 
@@ -60,7 +61,7 @@ const HeroArea = () => {
             effect="fade"
             spaceBetween={0}
             slidesPerView={1}
-            loop={swiperLoop}
+            loop={false}
             autoplay={{ delay: 6000 }}
           >
             {sliderData.map(item => {

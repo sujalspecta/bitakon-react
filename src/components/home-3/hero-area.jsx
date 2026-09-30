@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import NiceSelect from '../ui/NiceSelect';
 
 const slider_data = [
@@ -97,7 +98,7 @@ const HeroArea = () => {
                       className="swiper-wrapper"
                       spaceBetween={20}
                       slidesPerView={1}
-                      loop
+                      loop={false}
                       autoplay={{ delay: 6000 }}
                     >
                       {slider_data.map(item => {

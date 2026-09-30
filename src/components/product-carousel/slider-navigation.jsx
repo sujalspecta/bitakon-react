@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
-
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import BidModal from "../common/modals/bid-modal";
 import BidItem from "../common/bid-item";
 import products from "../../data/products";
@@ -41,7 +41,7 @@ const SliderNavigation = () => {
                   className="swiper-wrapper"
                   spaceBetween={25}
                   slidesPerView={4}
-                  loop
+                  loop={false}
                   autoplay={{ delay: 6000 }}
                   breakpoints={
                     {

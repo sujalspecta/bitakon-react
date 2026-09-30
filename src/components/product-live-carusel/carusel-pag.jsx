@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import dynamic from 'next/dynamic';
-
 import products from '../../data/products';
 import BidModal from '../common/modals/bid-modal';
 import AuctionItem from '../common/auc-item';
@@ -32,7 +32,7 @@ const CarouselPagination = () => {
                   className="swiper-wrapper"
                   spaceBetween={25}
                   slidesPerView={3}
-                  loop
+                  loop={false}
                   autoplay={{ delay: 6000 }}
                   breakpoints={
                     {
